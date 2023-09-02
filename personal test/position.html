@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Your CSS styles here */
+      body {
+        font-family: "Roboto", sans-serif;
+
+        background-color: linear-gradient(to right, #f0f2f0, #000c40);
+      }
+
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .pricing-container {
+        display: flex;
+        gap: 30px;
+      }
+
+      .pricing-plan {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 0px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .pricing-plan:hover {
+        transform: translateY(-15px);
+      }
+
+      .plan-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .plan-description {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 20px;
+      }
+
+      .plan-price {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 50px;
+        font-weight: bolder;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .plan-features {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+
+      .plan-features li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .plan-features li span {
+        margin-right: 5px;
+        color: #dd5e89;
+      }
+
+      .plan-button {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+        background: linear-gradient(to right, #f7bb97, #dd5e89);
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+        margin: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .plan-button:hover {
+        background-color: #f69cb7;
+      }
+
+      @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction: column;
+        }
+
+        section {
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="pricing-container">
+        <div class="pricing-plan">
+          <div class="plan-container">
+            <div class="plan-title">Basic</div>
+            <hr />
+            <div class="plan-description">
+              Using the power of fixed-width styling, we added some utility
+              styling to handle HTML lists with icons used as decorative
+              bullets.
+            </div>
+          </div>
+          <div class="plan-price">
+            <div class="plan-price">
+              $<span class="number-weight">9.99</span>/month
+            </div>
+            <hr class="price-hr" />
+          </div>
+          <div class="plan-features-container">
+            <ul class="plan-features">
+              <li><span>&#10003;</span>10GB storage</li>
+              <li><span>&#10003;</span>10GB storage</li>
+              <li><span>&#10003;</span>1 User</li>
+              <li><span>&#10003;</span>Support</li>
+            </ul>
+          </div>
+          <div class="plan-button-container">
+            <button class="plan-button">Sign Up</button>
+          </div>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-container">
+            <div class="plan-title">Standard</div>
+            <hr />
+            <div class="plan-description">
+              Using the power of fixed-width styling, we added some utility
+              styling to handle HTML lists with icons used as decorative
+              bullets.
+            </div>
+          </div>
+          <div class="plan-price">
+            <div class="plan-price">
+              $<span class="number-weight">19.99</span>/month
+            </div>
+            <hr class="price-hr" />
+          </div>
+          <div class="plan-features-container">
+            <ul class="plan-features">
+              <li><span>&#10003;</span>50GB Storage</li>
+              <li><span>&#10003;</span>5 Users</li>
+              <li><span>&#10003;</span>Phone &amp; Email Support</li>
+            </ul>
+          </div>
+          <div class="plan-button-container">
+            <button class="plan-button">Sign Up</button>
+          </div>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-container">
+            <div class="plan-title">Premium</div>
+            <hr />
+            <div class="plan-description">
+              Using the power of fixed-width styling, we added some utility
+              styling to handle HTML lists with icons used as decorative
+              bullets.
+            </div>
+          </div>
+          <div class="plan-price">
+            <div class="plan-price">
+              $<span class="number-weight">49.99</span>/month
+            </div>
+            <hr class="price-hr" />
+          </div>
+          <div class="plan-features-container">
+            <ul class="plan-features">
+              <li><span>&#10003;</span>100GB Storage</li>
+              <li><span>&#10003;</span>10 Users</li>
+              <li><span>&#10003;</span>24/7 Support</li>
+            </ul>
+          </div>
+          <div class="plan-button-container">
+            <button class="plan-button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<script src="script.js"></script>
+<script
+  src="https://kit.fontawesome.com/88a0bf72ce.js"
+  crossorigin="anonymous"
+></script>

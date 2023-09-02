@@ -1,0 +1,43 @@
+#circle{
+    border-radius: 50%;
+    background-color: aqua;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+
+img {
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+}
+/* Style the contact info section */
+.contact-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Style the name */
+.contact-info h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style the email and phone number */
+.contact-info p {
+    margin: 0;
+    font-weight: 500;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
